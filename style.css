@@ -8,16 +8,21 @@
 body {
   width: 100%;
   min-height: 100vh;
-  background: linear-gradient(90deg, #04fbff 0%, #33ff0093 100%);
+  background-color: black;
+  background-image: url(imagem.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
+
 }
 
 .container {
   background-color: #fafafa;
   border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.9);
   width: 400px;
   max-width: 100%;
   overflow: hidden;
@@ -67,15 +72,20 @@ body {
 }
 
 .form button {
-  background-color: #33ff0093;
-  border: 2px solid #33ff0093;
-  color: black;
+  background-color:rgb(14, 14, 14);
+  border: 2px solid #05010056;
+  color: white;
   font-size: 14px;
   width: 100%;
   border-radius: 10px;
   padding: 10px;
 }
 
+.form button:hover{
+  background: linear-gradient(90deg, #0792fd 0%, #ffcc00 100%);
+  color: #111009ad;
+  border-color: #0e0e0b79;
+}
 /* Error and Success */
 .form-control.success input {
   border-color: #2ecc71;
